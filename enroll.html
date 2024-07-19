@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+  .rightitem{
+    /* float: right;
+    padding-right: 15%; */
+position: absolute;
+right: 35%;
+top: 20%;
+}
+.rightitem  input {
+    width: 378px;
+    height: 20px;
+}
+.rightitem a{
+    border: 1px solid orangered;
+    color:orangered;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="rightitem">
+        <table>
+            <form action="form" method="post">
+                <input type="text"  id="name"  placeholder="  Enter Your Name">
+            <br>
+            <br>
+            <input type="email" name="" id="email" placeholder="  Enter Your E-Mail Address">
+            <br>
+            <br>
+            <input type="text" id="Subject" placeholder="  Enter Your Subject">
+            <br><br>
+            <textarea name="" id="Messege" cols="50" rows="10" placeholder=" Messege"></textarea>
+            <br>
+            <br>
+
+            <a href="#" onclick="form()" >Submit </a>
+            </form>
+        </table>
+
+        <script>
+            function form(){
+                var x = document.getElementById("name").value ;
+                var y = document.getElementById("email").value ;
+                var z = document.getElementById("subject").value; 
+                var a = document.getElementById("messege").value ;
+
+                var vn = /^[A-Z]+$/;
+                
+                var name = ptvn.test(x);
+
+                if(x==" "){
+                    alert("please enter name in capital letters");
+                    return false ;
+                }
+
+                if(vn== false){
+                    alert("invilad name please enter correct name");
+                    return false;
+                }   
+            }
+
+        </script>
+</body>
+</html>
