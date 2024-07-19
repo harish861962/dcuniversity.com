@@ -1,0 +1,340 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+.dark{
+    color: white;
+    background-color: black;
+    
+}
+
+/* responive nav */
+
+section{
+    display: none;
+}
+.section {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.326);
+    font-size: 1.5em;
+  }
+  nav ul,
+  li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  nav,
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    min-width: 50%;
+  }
+  @media (max-width: 1018px) {
+    h1 {
+      color: red;
+      font-size: 5em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      color: orange;
+      font-size: 4em;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      color: violet;
+      font-size: 2em;
+    }
+    section {
+      display: block;
+    }
+    nav,
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    ul,
+    a {
+      display: none;
+    }
+    nav:hover a,
+    ul {
+      display: flex;
+    }
+    nav:hover section {
+  
+      display: none;
+    }
+  }
+  
+
+
+/* responive nav  */
+
+
+
+.toppage{
+    background: linear-gradient(rgba(4,9,30,0.7) , rgba(4,9,30,0.7)), url(dcu\ university\ unsplash.jpg);
+
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.toppage .logo img {
+    width: 15%;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.toppage header {
+display: flex;
+justify-content: space-between;
+}
+
+.toppage  nav ul li a {
+    padding: 0;
+    margin: 0;
+}
+.toppage  nav ul li , a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    /* padding-top: 50px; */
+   padding:40px;
+   /* font-size: 22px; */
+    
+} 
+.toppage .content1 {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+}
+.toppage .content1 .toph1{
+    color: white;
+    font-size:3.5em;
+    margin: 0;
+    padding: 0;
+}
+.toppage .content1 .topp{
+    color: white;
+    /* font-size: 20px; */
+    padding-left:55px;
+    
+}
+.toppage .content1 .topbtn{
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 99px;
+}
+
+.coursepage{
+    background-color: white;
+    height: 70vh;
+}
+.coursepage .courseh1{
+    /* color: white; */
+    text-align: center;
+    padding-top: 60px; 
+}
+.coursepage .courseh3{
+    text-align: center;
+   padding: 0;
+    color: gray;
+
+}
+.coursepage .box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+   
+}
+.coursepage .box .cardh2{
+    text-align: center;
+}
+.coursepage .box .cardp{
+    width: 70%;
+    text-align: center;
+     padding-left: 40px;
+}
+
+.coursepage .box .card1{
+    background-color: papayawhip;
+    padding: 50px ;
+    width: 25%;
+}
+
+.coursepage .box .card2{
+    background-color: papayawhip;
+    padding: 50px ;
+    width: 25%;
+
+}
+.coursepage .box .card3{
+    background-color: papayawhip;
+    padding: 50px ;
+    width: 25%;
+}
+.campuspage{
+    background-color: white;
+    height: 70vh;
+}
+
+.campuspage .campush1{
+    text-align: center;
+    padding-top: 40px;
+    /* font-size: 40px; */
+}
+.campuspage .campush4{
+    text-align: center;
+    color: gray;
+}
+.campuspage .campusimg{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.campuspage .campusimg img {
+    width: 25%;
+    border-radius: 15px;
+    margin: 0;
+
+}
+.facilitiespage{
+    background-color: white;
+    height: 90vh;
+}
+.facilitiespage .facilitiesh1{
+    text-align: center;
+    /* font-size: 3em; */
+    padding: 30px;
+    margin: 0;
+}
+.facilitiespage .facilitiesp{
+    text-align: center;
+    color: gray;
+}
+.facilitiespage .facilitiesimg{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+   
+}
+.facilitiespage .facilitiesimg .img1{
+    width:25% ;
+   
+}
+.facilitiespage .facilitiesimg .img2{
+    width:25% ;
+  
+}
+.facilitiespage .facilitiesimg .img3{
+    width:25% ;
+   
+}
+
+.facilitiespage .facilitiesimg  img{
+    width:100%;
+    border-radius: 15px;
+}
+.facilitiespage .facilitiesimg .facilitiesP1{
+    width: 70%;
+}
+.reviewpage{
+    background-color: white;
+    height: 130vh;
+    position: relative;
+   
+}
+.reviewpage .reviewh1{
+    text-align: center;
+    padding-top: 80px;
+    /* font-size: 3em; */
+
+}
+.reviewpage .reviewp{
+    text-align: center;
+    color: gray;
+    
+}
+.reviewpage .reviewcard{
+    display: flex;
+    justify-content: space-evenly;
+    height: 35vh;
+}
+.reviewpage .reviewcard .card1 img{
+    width: 6%;
+    border-radius: 120px;
+    float: left;
+
+}
+.reviewpage .reviewcard .card1 img , .reviewp1{
+    display: inline-block;
+} 
+ .reviewp1{
+    /* width: 70%; */
+    float: inline-start;
+    padding-left: 50px;
+    margin: 0;
+    
+}
+.reviewpage .reviewcard .card1{
+    background-color: papayawhip;
+    width: 35%;
+    padding: 40px;
+    border-radius: 40px;
+}
+.reviewpage .reviewcard .card1 .reviewh4{
+    padding-left: 60px;
+    font-size: large;
+    
+}
+.reviewpage .reviewcard .card1 .star{
+    color: black;
+    margin-left: 65px;
+}
+.reviewcard1{
+    background: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1588865876768-f9e265a1d38f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUyfHxjb21wdXRlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    height: 40vh;
+    width: 70%;
+    text-align:center;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+   margin-left: 15%; 
+}
+
+.reviewcard1 .enrollh1{
+    color: white;
+    text-align: center;
+    padding-top: 7%;
+
+}
+.reviewcard1 .enrollh2{
+    color: white;
+    text-align: center;
+    padding: 0;
+
+}
+.reviewcard1 .enrollbtn{
+    color: white;
+    text-align: center;
+    border: white 1px solid ;
+    padding: 10px 20px;
+}
+
